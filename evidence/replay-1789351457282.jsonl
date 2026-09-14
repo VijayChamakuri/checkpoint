@@ -1,0 +1,5 @@
+{"ts":"2026-09-14T02:04:17.759Z","runId":"replay-1789351457282","phase":"replay","event":"step","detail":{"step":0,"action":"type"}}
+{"ts":"2026-09-14T02:04:17.791Z","runId":"replay-1789351457282","phase":"replay","event":"step","detail":{"step":1,"action":"click"}}
+{"ts":"2026-09-14T02:04:17.845Z","runId":"replay-1789351457282","phase":"replay","event":"step","detail":{"step":2,"action":"click"}}
+{"ts":"2026-09-14T02:04:17.859Z","runId":"replay-1789351457282","phase":"replay","event":"step","detail":{"step":3,"action":"read"}}
+{"ts":"2026-09-14T02:04:17.859Z","runId":"replay-1789351457282","phase":"replay","event":"success","detail":{"outputs":{"savings_balance":"$812.10"}}}

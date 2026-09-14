@@ -1,0 +1,10 @@
+
+> checkpoint@0.1.0 discover
+> tsx src/cli/discover.ts --name lookup-member-balance --goal look up member {{memberId}} and read their current savings balance --description Search for a member by ID and read their current savings balance. --params {"memberId":"10023"}
+
+Starting discovery run discover-1789351433416
+Goal: look up member 10023 and read their current savings balance
+Saved capability artifact: artifacts/lookup-member-balance.v1.json
+Outputs: {
+  "savings_balance": "$4210.55"
+}

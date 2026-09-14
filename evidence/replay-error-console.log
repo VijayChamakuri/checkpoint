@@ -1,0 +1,11 @@
+
+> checkpoint@0.1.0 replay
+> tsx src/cli/replay.ts --artifact artifacts/lookup-member-balance.v1.json --params {"memberId":"99999"}
+
+Replaying capability "lookup-member-balance" v1 with params {"memberId":"99999"}
+{
+  "outcome": "business",
+  "businessOutcome": "member_not_found",
+  "message": "No results found for",
+  "screenshot": "evidence/replay-1789351465010-business-outcome.png"
+}

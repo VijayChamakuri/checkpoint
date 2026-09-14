@@ -1,0 +1,111 @@
+{
+  "id": "lookup-member-balance",
+  "version": 1,
+  "name": "lookup-member-balance",
+  "description": "Search for a member by ID and read their current savings balance.",
+  "target": {
+    "app": "Member Services Console",
+    "entryUrl": "/search"
+  },
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "memberId": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "memberId"
+    ]
+  },
+  "outputSchema": {
+    "type": "object",
+    "properties": {
+      "savings_balance": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "savings_balance"
+    ]
+  },
+  "steps": [
+    {
+      "action": "type",
+      "locator": {
+        "role": "textbox",
+        "name": "Member name or ID",
+        "framePath": [],
+        "structuralPath": [
+          "0"
+        ],
+        "fallbackCoordinate": {
+          "x": 240.5625,
+          "y": 98.25
+        }
+      },
+      "value": {
+        "paramRef": "memberId"
+      }
+    },
+    {
+      "action": "click",
+      "locator": {
+        "role": "button",
+        "name": "Search",
+        "framePath": [],
+        "structuralPath": [
+          "0"
+        ],
+        "fallbackCoordinate": {
+          "x": 53.12109375,
+          "y": 131.75
+        }
+      }
+    },
+    {
+      "action": "click",
+      "locator": {
+        "role": "link",
+        "name": "View",
+        "framePath": [],
+        "structuralPath": [
+          "0"
+        ],
+        "textMatch": {
+          "paramRef": "memberId"
+        },
+        "fallbackCoordinate": {
+          "x": 1051.3515625,
+          "y": 198.25
+        }
+      }
+    },
+    {
+      "action": "read",
+      "locator": {
+        "role": "cell",
+        "name": "",
+        "framePath": [],
+        "structuralPath": [
+          "1"
+        ],
+        "textMatch": "Savings Balance",
+        "fallbackCoordinate": {
+          "x": 172.1953125,
+          "y": 127.25
+        }
+      },
+      "extract": {
+        "field": "savings_balance",
+        "from": "text"
+      }
+    }
+  ],
+  "checkpoint": {
+    "type": "url-matches",
+    "pattern": "/member/.*"
+  },
+  "createdAt": "2026-09-14T02:04:08.696Z",
+  "sourceRunId": "discover-1789351433416"
+}

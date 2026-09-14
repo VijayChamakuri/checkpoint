@@ -1,0 +1,3 @@
+{"ts":"2026-09-14T02:04:25.409Z","runId":"replay-1789351465010","phase":"replay","event":"step","detail":{"step":0,"action":"type"}}
+{"ts":"2026-09-14T02:04:25.442Z","runId":"replay-1789351465010","phase":"replay","event":"step","detail":{"step":1,"action":"click"}}
+{"ts":"2026-09-14T02:04:25.452Z","runId":"replay-1789351465010","phase":"replay","event":"business-outcome","detail":{"step":1,"outcome":"member_not_found","message":"No results found for"}}

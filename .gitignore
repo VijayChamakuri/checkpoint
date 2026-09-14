@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.DS_Store
+*.pdf
+.env
+.env.local
+*.log
+# The evidence directory's own console logs are the deliverable, not scratch
+# output -- evidence/README.md links to them directly, so they need to be
+# committed even though every other *.log in the repo is disposable.
+!evidence/*.log
+run-state/
+.playwright-cache/
+test-results/
+playwright-report/
